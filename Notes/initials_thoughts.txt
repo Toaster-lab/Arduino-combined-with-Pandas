@@ -1,0 +1,9 @@
+I am trying to involve git/github into my workflow and adding documentation for my future self to be able to reflect on.
+
+The plan is:
+   1. building a small circuit that gives me actual data.
+   2. learning how to put data into a file that I read through Serial that is giving my Arduino.
+   3. processing that data with Pandas further and matplotlib to visualize
+   4. scale
+
+This are some very simplefied thoughts on the journey. For step 4 i am not sure what circuit I want to build next so it is just "scale" for now.
