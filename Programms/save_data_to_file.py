@@ -4,7 +4,11 @@ import serial
 #Functions:
 arduino = serial.Serial("COM4", 9600)
 
-data = arduino.readline()
 
-with open("tempature", "w") as file:
-    file.write(data, "\n")
+
+with open("tempature.txt", "w") as file:
+    while True:
+       data = arduino.readline().decode().strip()
+       file.write(data + "\n")
+       #print(data) <= to check if it even recieves data
+       file.flush()
