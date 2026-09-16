@@ -9,11 +9,13 @@ void setup() {
   lcd.begin(16, 2);
  
 }
-/// hardest thing to do is converting the data
+/* hardest thing to do is converting the data
+I measured the actual voltage of my Arduino and it is 4.6
+So I adjusted it and now the resuslts I get are way better */
 void loop() {
   int raw_input;
   raw_input = analogRead(A0);
-  float voltage = raw_input * (5.0 / 1023.0);
+  float voltage = raw_input * (4.6 / 1023.0);
   float tempature = (voltage - 0.5) / 0.01;
   Serial.println(tempature);
   delay(2500);
