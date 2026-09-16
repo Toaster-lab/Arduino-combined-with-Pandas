@@ -6,7 +6,7 @@ arduino = serial.Serial("COM4", 9600)
 
 
 
-with open("tempature.txt", "w") as file:
+with open("temperature.txt", "w") as file:
     while True:
        data = arduino.readline().decode().strip()
        file.write(data + "\n")

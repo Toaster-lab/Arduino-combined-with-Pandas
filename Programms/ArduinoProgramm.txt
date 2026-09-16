@@ -16,13 +16,13 @@ void loop() {
   int raw_input;
   raw_input = analogRead(A0);
   float voltage = raw_input * (4.6 / 1023.0);
-  float tempature = (voltage - 0.5) / 0.01;
-  Serial.println(tempature);
+  float temperature = (voltage - 0.5) / 0.01;
+  Serial.println(temperature);
   delay(2500);
   lcd.clear();
-  lcd.print("Temperature:");
+  lcd.print("temperature");
   lcd.setCursor(0, 1);
-  lcd.print(tempature);
+  lcd.print(temperature);
   lcd.print(" C");
 }
 
