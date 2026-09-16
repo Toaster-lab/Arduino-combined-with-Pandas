@@ -1,0 +1,26 @@
+#include <Arduino.h>
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+/// seting up what the inputs are
+void setup() {
+  pinMode(A0,INPUT);
+  Serial.begin(9600);
+  lcd.begin(16, 2);
+ 
+}
+/// hardest thing to do is converting the data
+void loop() {
+  int raw_input;
+  raw_input = analogRead(A0);
+  float voltage = raw_input * (5.0 / 1023.0);
+  float tempature = (voltage - 0.5) / 0.01;
+  Serial.println(tempature);
+  delay(2500);
+  lcd.clear();
+  lcd.print("Temperature:");
+  lcd.setCursor(0, 1);
+  lcd.print(tempature);
+  lcd.print(" C");
+}
+
