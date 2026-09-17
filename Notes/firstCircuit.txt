@@ -3,3 +3,5 @@ I built a pretty simple tempature reader with a somewhat accurate component. I a
 My only struggle was the wiring. I am trying to better my wiring for future projects so I did it with straight wiring. 
 It did not work the first few times but I learned how to debug it a bit. Just trying to get a diffrent Error so I can narrow down the issue.
 I am quite proud of it because I felt like I knew what I was actually doing, especially on the programming side of things.
+
+I made a circuit diagram now and tried to make it neat. This was my first time and I felt it is pretty decent. It is a really simple circuit that I can expand on.
