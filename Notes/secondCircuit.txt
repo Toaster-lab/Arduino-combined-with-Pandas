@@ -1,0 +1,7 @@
+Idea: mini weather station in my room at a consitent place
+Input: numbers between 0-1023 that represent their respective value
+Processing: The raw data will be processed to give it a real meaning and put into file. This file will be cleaned and make it more useful using the Pandas libary, NumPy and MatplotLib for visualization
+Output: clean graph and cleaned up data with context
+
+Reason: Combining my fascination with the weather and electronics to monitor various things in my room and get a clean graph to make a conclusion. How stable are the conditions in my room? 
+        I am taking this as a learning experience for combining my skills, learning new one and picking out the right components which I havent done at the time of the commit.
