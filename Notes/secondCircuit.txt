@@ -4,4 +4,8 @@ Processing: The raw data will be processed to give it a real meaning and put int
 Output: clean graph and cleaned up data with context
 
 Reason: Combining my fascination with the weather and electronics to monitor various things in my room and get a clean graph to make a conclusion. How stable are the conditions in my room? 
-        I am taking this as a learning experience for combining my skills, learning new one and picking out the right components which I havent done at the time of the commit.
+        I am taking this as a learning experience for combining my skills, learning new one and picking out the right components which I havent done at the time of the commit.`
+
+
+Parts: I am gonna buy various sensor also for outside this project. I am getting a sensor for tempature and humidity and a rain sensor. 
+       
