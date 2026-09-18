@@ -7,5 +7,8 @@ Reason: Combining my fascination with the weather and electronics to monitor var
         I am taking this as a learning experience for combining my skills, learning new one and picking out the right components which I havent done at the time of the commit.`
 
 
-Parts: I am gonna buy various sensor also for outside this project. I am getting a sensor for tempature and humidity and a rain sensor. 
+Parts: I am gonna buy various sensor also for outside this project. I am getting a sensor for tempature, humidity and a rain sensor and a light sensor. 
+       Sensors: tempature and humidity; HW-498
+                rain:                   generic one
+                light sensor:           BH1750
        
