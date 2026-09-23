@@ -1,8 +1,6 @@
 import pandas as pd
 import numpy as np
-<<<<<<< HEAD
 import matplotlib.pyplot as plt
-
 
 data = pd.read_csv("example_file.txt",
                     sep = " ",
