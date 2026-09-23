@@ -1,15 +1,16 @@
 #Saving data I got from Serial to a txt file
 import serial
+from datetime import datetime 
 
 #Functions:
 arduino = serial.Serial("COM4", 9600)
 
-
+time = datetime.now
 
 with open("temperature.txt", "w") as file:
     while True:
        data = arduino.readline().decode().strip()
-       file.write(data + "\n")
+       file.write(data + time + "\n")
        #print(data) <= to check if it even recieves data
        file.flush()
 #I am going to need to create a list with the data I get from Serial
