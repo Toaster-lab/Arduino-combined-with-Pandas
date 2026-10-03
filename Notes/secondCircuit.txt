@@ -1,4 +1,4 @@
-Idea: mini weather station in my room at a consitent place
+ Idea: mini weather station in my room at a consitent place
 Input: numbers between 0-1023 that represent their respective value
 Processing: The raw data will be processed to give it a real meaning and put into file. This file will be cleaned and make it more useful using the Pandas libary, NumPy and MatplotLib for visualization
 Output: clean graph and cleaned up data with context
@@ -8,7 +8,7 @@ Reason: Combining my fascination with the weather and electronics to monitor var
 
 
 Parts: I am gonna buy various sensor also for outside this project. I am getting a sensor for tempature, humidity and a rain sensor and a light sensor. 
-       Sensors: tempature and humidity; HW-498
+       Sensors: tempature and humidity; DHT11
                 rain:                   generic one/ not specific
                 light sensor:           BH1750
 

@@ -1,0 +1,37 @@
+#include <DHT.h>
+#include <BH1750.h>
+
+int rainSensorPin = A0;
+
+BH1750 lightSensor;
+
+#define DHTPIN 4
+#define DHTTYPE DHT11
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  Wire.begin();
+  lightSensor.begin();
+  pinMode(rainSensorPin, INPUT);
+}
+
+void loop() {
+  float light = lightSensor.readLightLevel();
+  float humidity = dht.readHumidity();
+  float tempature = dht.readTemperature(); // (true) for Fahrenheit
+  int raw_rain = analogRead(rainSensorPin);
+
+  Serial.print(humidity);
+  Serial.print(" ");
+  Serial.print(tempature);
+  Serial.print(" ");
+  Serial.print(light);
+  Serial.print(" ");
+  Serial.println(raw_rain);
+  delay(2000);
+} 
+
+// by Thorben Che Koch
