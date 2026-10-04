@@ -1,6 +1,7 @@
 
 import serial
 from datetime import datetime 
+import time
 
 arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 
@@ -8,10 +9,12 @@ with open("/home/arduinoproject/Documents/pythonws/Arduino-combined-with-Pandas/
 
     while True:
        data = arduino.readline().decode().strip()
+
        if data:
-           time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") # Updates every loop
+           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
            
-           file.write(data + ", " + time + "\n")
+           file.write(data + ", " + current_time + "\n")
     
            file.flush()
+       time.sleep(3600)
 
