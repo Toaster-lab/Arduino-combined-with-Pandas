@@ -1,17 +1,17 @@
-#Saving data I got from Serial to a txt file
+
 import serial
 from datetime import datetime 
 
-#Functions:
-arduino = serial.Serial("COM4", 9600)
+arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 
-time = datetime.now
+with open("/home/arduinoproject/Documents/pythonws/Arduino-combined-with-Pandas/Programms/temperature.txt", "w") as file:
 
-with open("temperature.txt", "w") as file:
     while True:
        data = arduino.readline().decode().strip()
-       file.write(data + time + "\n")
-       #print(data) <= to check if it even recieves data
-       file.flush()
-#I am going to need to create a list with the data I get from Serial
-#My data should be in a specific order so I can assign each column their respecting name.
+       if data:
+           time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") # Updates every loop
+           
+           file.write(data + ", " + time + "\n")
+    
+           file.flush()
+
