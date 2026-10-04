@@ -12,4 +12,5 @@ while True:
         
         with open("/home/arduinoproject/Documents/pythonws/Arduino-combined-with-Pandas/Programms/temperature.txt", "a") as file:
             file.write(data + ", " + current_time + "\n")
+            print(data)
             file.flush()

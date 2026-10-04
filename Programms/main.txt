@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <DHT.h>
 #include <BH1750.h>
 
@@ -31,7 +32,7 @@ void loop() {
   Serial.print(light);
   Serial.print(" ");
   Serial.println(raw_rain);
-  delay(2000);
+  delay(3600000); // 1 hour
 } 
 
 // by Thorben Che Koch
