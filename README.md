@@ -42,11 +42,29 @@ analyze that and create diagrams using Numpy.
 
 ### Arduino
 
+The Arduino part of the project focuses on learning how to work with circuits, sensors, inputs and outputs, and collecting data from physical hardware.
 
+I used C++ to program the Arduino and learned how to:
+* Read data from sensors
+* Work with buttons and other inputs
+* Control outputs such as an LCD
+* Send data through the Serial connection
+* Connect the physical hardware with my Python programs
+* Understand basic circuits and wiring
 
 ### Python / Pandas
 
+The Python part of the project focuses on receiving and processing the data collected by the Arduino.
 
+I used Python and Pandas to:
+* Receive and store Arduino data
+* Read and work with datasets
+* Clean and filter data
+* Organize data using Pandas DataFrames
+* Analyze the collected information
+* Use the data for further processing and visualization
+
+This allowed me to combine my Python/Pandas knowledge with the hardware side of the project.
 
 ## Data
 The data I got on the first attempt got pretty quickly to nonsense because the conditions were too much for the sensors too handle.
