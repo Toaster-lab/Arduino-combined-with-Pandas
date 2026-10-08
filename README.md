@@ -49,6 +49,7 @@ analyze that and create diagrams using Numpy.
 
 
 ## Data
+The data I got on the first attempt got pretty quickly to nonsense because the conditions were too much for the sensors too handle.
 
 ## Analysis
 
