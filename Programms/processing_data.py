@@ -8,7 +8,8 @@ data = pd.read_csv(
     names=["humidity", "temperature", "light", "rain","date","time"],
     index_col="time"
 )
-
+data["rain1_0"] = np.where(data['rain'] == 1023 ,1 ,0)
+data['mean:rain'] = np.mean(data['rain'])
 xpoints = data.index
 
 class CreatingDiagram:
@@ -22,7 +23,7 @@ class CreatingDiagram:
         plt.show()
 
 
-temperature_diagram = CreatingDiagram("temperature")
+temperature_diagram = CreatingDiagram('mean:rain')
 temperature_diagram.show_diagram()
 #I sadly dont have that much time to programm because of school 
 #this is an example, the order of information is not fixed yet
