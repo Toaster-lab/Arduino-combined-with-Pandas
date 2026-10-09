@@ -70,14 +70,25 @@ This allowed me to combine my Python/Pandas knowledge with the hardware side of 
 The data I got on the first attempt got pretty quickly to nonsense because the conditions were too much for the sensors too handle.
 
 ## Analysis
-
+On my first try there isn't really anything to analyse, the data sample is too little and the data is just wrong.
+I built a really simple program to convert the data to a graph.
 
 ## Results
 
 
 
 ## Project Structure
-
+Arduino combined with Pandas
+|
+- Notes
+|   - circuit.jpg
+|   - firstCircuit.txt
+|   - ...
+- Programms  
+|   - ArduinoProgramm.txt
+|   - main.txt
+|   - ...
+- README.md
 
 ## What I Learned
 
