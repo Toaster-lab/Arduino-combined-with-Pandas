@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 data = pd.read_csv(
-    "example_file.txt",
-    sep=" ",
-    names=["time", "temperature", "humidity", "light", "rain"],
+    "Programms/temperature.txt",
+    sep=r"\s+",
+    names=["humidity", "temperature", "light", "rain","date","time"],
     index_col="time"
 )
 
@@ -18,6 +18,7 @@ class CreatingDiagram:
         plt.plot(xpoints, data[self.shown_data])
         plt.xlabel("Timestamp")
         plt.ylabel(f"Showing {self.shown_data}")
+        plt.xticks(fontsize=8, rotation = 45)
         plt.show()
 
 
