@@ -69,34 +69,38 @@ On my first try there isn't really anything to analyse, the data sample is too l
 I built a really simple program to convert the data to a graph.
 
 ## Results
-*Successfully built a working weather station prototype.
-*Collected temperature, humidity, light, and rain data.
-*Stored and analyzed the data using Python and Pandas.
-*Created diagrams using Matplotlib.
-*Unfortunately, some sensors started giving incorrect readings after a short period of operation.
+* Successfully built a working weather station prototype.
+* Collected temperature, humidity, light, and rain data.
+* Stored and analyzed the data using Python and Pandas.
+* Created diagrams using Matplotlib.
+* Unfortunately, some sensors started giving incorrect readings after a short period of operation.
 
 ## Project Structure
+```text
 Arduino combined with Pandas
 |
-- Notes
-|   - circuit.jpg
-|   - firstCircuit.txt
-|   - ...
-- Programms  
-|   - ArduinoProgramm.txt
-|   - main.txt
-|   - ...
-- README.md
+|_ Notes
+|  |_ circuit.jpg
+|  |_ firstCircuit.txt
+|  |_ ...
+|
+|_ Programms
+|  |_ ArduinoProgramm.txt
+|  |_ main.py
+|  |_ ...
+|
+|_ README.md
+```
 
 ## What I Learned
-*How to connect and use different Arduino sensors.
-*How to collect and analyze real-world data with Python.
-*How to visualize data using Matplotlib.
-*How to troubleshoot hardware and software problems.
-*How important picking the right sensor is.
+* How to connect and use different Arduino sensors.
+* How to collect and analyze real-world data with Python.
+* How to visualize data using Matplotlib.
+* How to troubleshoot hardware and software problems.
+* How important picking the right sensor is.
 
 ## Possible Improvements and Errors
-*Fixing sensor and housing issues, like actually designing it and not cheaping out on the sensors
-*Software, I could definetly improve and expand on my software, I need to learn more for that and 
+* Fixing sensor and housing issues, like actually designing it and not cheaping out on the sensors
+* Software, I could definetly improve and expand on my software, I need to learn more for that and 
 I will when I make another version of this
 
