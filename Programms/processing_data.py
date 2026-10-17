@@ -2,33 +2,33 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+#making Dataframe
 data = pd.read_csv(
     "Programms/temperature.txt",
     sep=r"\s+",
     names=["humidity", "temperature", "light", "rain", "date", "time"]
 )
-
-font = plt.xticks(fontsize=8, rotation=45)
-
 data = data.set_index("time")
 data = data.sort_index()
 
-#converting no rain and rain to binary
+#creating variables/coloumns:
+xpoints = data.index
 data["rain1_0"] = np.where(data["rain"] == 1023, 0, 1)
-
+data["rain1_0"] = np.where(data["rain"] == 1023, 0, 1) #converting no rain and rain to binary
 #min,max,mean
 min_temperature = data["temperature"].min()
 max_temperature = data["temperature"].max()
 mean_temperature = data["temperature"].mean()
+
+
 
 daily_summary = data.groupby("date").agg({
     "temperature": ["min", "max", "mean"],
     "humidity": "mean",
     "rain1_0": "sum"
 })
-xpoints = data.index
 
-
+#Classes:
 class CreatingDiagram:
     def __init__(self, shown_data: str) -> None:
         self.shown_data = shown_data
@@ -37,10 +37,9 @@ class CreatingDiagram:
         plt.plot(xpoints, data[self.shown_data])
         plt.xlabel("Timestamp")
         plt.ylabel(f"Showing {self.shown_data}")
-        font
+        plt.xticks(fontsize=8, rotation=45)
         plt.tight_layout()
         plt.show()
-
 
 class WeatherAnalysis:
     def __init__(self, data) -> None:
@@ -59,15 +58,15 @@ class WeatherAnalysis:
         plt.xlabel("Time")
         plt.ylabel("Rain in binary")
         plt.yticks([0, 1]) #only two available values
-        font
+        plt.xticks(fontsize=8, rotation=45)
         plt.tight_layout()
         plt.show()
 
+#Testing:
 weather = WeatherAnalysis(data)
 weather.show_temperature_stats()
 weather.show_daily_summary()
 weather.show_rain()
-
 temperature_diagram = CreatingDiagram("temperature")
 temperature_diagram.show_diagram()
 #I sadly dont have that much time to programm because of school 
