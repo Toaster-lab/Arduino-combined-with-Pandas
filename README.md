@@ -1,14 +1,12 @@
 # Arduino + Pandas Data Analysis
 
 ## Project Overview
-
 *Mini weather station*
 I build two circuits, one just for testing and seeing if the idea would even work.
 The second one is the main one we will actually use to get our data from.
 The data will be processed and analyse for a quick overview of the weather where I live.
 
 ## Goal
-
 The main goal of this project was to learn more about electrical circuits and electronics by building and experimenting with an Arduino-based system.
 I also wanted to learn and apply C++ for Arduino programming, 
 reuse my Python and Pandas skills to analyze collected data, 
@@ -16,7 +14,6 @@ integrate Git and GitHub into my workflow,
 and combine hardware, programming, and data analysis in one project.
 
 ## Hardware
-
 * Arduino: Mega(main circuit), Uno(Prototype)
 * temperature/humidity: DHT11
 * rain sensor
@@ -34,14 +31,12 @@ and combine hardware, programming, and data analysis in one project.
    * Numpy
 
 ## How It Works
-
 We read the data from the built circuit and display it with the Serial Monitor,
 read that from Python and save it into a text file,
 read that data after collection into a Pandas useable Dataframe,
 analyze that and create diagrams using Numpy.
 
 ### Arduino
-
 The Arduino part of the project focuses on learning how to work with circuits, sensors, inputs and outputs, and collecting data from physical hardware.
 
 I used C++ to program the Arduino and learned how to:
@@ -74,24 +69,38 @@ On my first try there isn't really anything to analyse, the data sample is too l
 I built a really simple program to convert the data to a graph.
 
 ## Results
-
-
+* Successfully built a working weather station prototype.
+* Collected temperature, humidity, light, and rain data.
+* Stored and analyzed the data using Python and Pandas.
+* Created diagrams using Matplotlib.
+* Unfortunately, some sensors started giving incorrect readings after a short period of operation.
 
 ## Project Structure
+```text
 Arduino combined with Pandas
 |
-- Notes
-|   - circuit.jpg
-|   - firstCircuit.txt
-|   - ...
-- Programms  
-|   - ArduinoProgramm.txt
-|   - main.txt
-|   - ...
-- README.md
+|_ Notes
+|  |_ circuit.jpg
+|  |_ firstCircuit.txt
+|  |_ ...
+|
+|_ Programms
+|  |_ ArduinoProgramm.txt
+|  |_ main.py
+|  |_ ...
+|
+|_ README.md
+```
 
 ## What I Learned
+* How to connect and use different Arduino sensors.
+* How to collect and analyze real-world data with Python.
+* How to visualize data using Matplotlib.
+* How to troubleshoot hardware and software problems.
+* How important picking the right sensor is.
 
 ## Possible Improvements and Errors
-
+* Fixing sensor and housing issues, like actually designing it and not cheaping out on the sensors
+* Software, I could definetly improve and expand on my software, I need to learn more for that and 
+I will when I make another version of this
 
